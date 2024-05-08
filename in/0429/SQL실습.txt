@@ -1,0 +1,29 @@
+create table reservation_tbl (
+lentno varchar2(3) NOT NULL Primary Key,
+custname varchar2(20),
+bookno varchar2(3),
+outdate date,
+indate date,
+status char(1) );
+
+INSERT INTO reservation_tbl VALUES('1','김한국','101','20221201','','1');
+INSERT INTO reservation_tbl VALUES('2','진선미','102','20221204','20221206','2');
+INSERT INTO reservation_tbl VALUES('3','장소미','201','20221001','','1');
+INSERT INTO reservation_tbl VALUES('4','최소망','103','20221109','','1');
+INSERT INTO reservation_tbl VALUES('5','이동국','301','20221224','20221225','2');
+INSERT INTO reservation_tbl VALUES('6','이소라','105','20221208','20221211','2');
+
+
+create table bookinfo_tbl (
+bookno varchar2(3) NOT NULL Primary Key,
+author char(20),
+bookname char(20) );
+
+insert into bookinfo_tbl values('101' , '박작가' , '시스템분석');
+insert into bookinfo_tbl values('102' , '김작가' , '전산개론');
+insert into bookinfo_tbl values('103' , '이작가' , '마케팅개론');
+insert into bookinfo_tbl values('105' , '황작가' , '사회학');
+insert into bookinfo_tbl values('201' , '최작가' , '역사학');
+insert into bookinfo_tbl values('301' , '오작가' , '전산영어');
+
+줄넘쳤을때 정리: set line 200; (한줄에 200칸 만큼만 채워라)

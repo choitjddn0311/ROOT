@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+    width: 4000px;
+    height: 300px;
+    animation: 10s infinite linear slide;
+    position: relative;
+    display: flex;
+}
+.slide > div {
+    width: 1000px;
+    height: 300px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 300px;
+}
+.first {
+    background-color: #aaa;
+}
+.second {
+    background-color: #bbb;
+}
+.third {
+    background-color: #ccc;
+}
+@keyframes slide {
+    0%{
+        left: 0;
+    }
+
+    15%{
+        left: 0;
+    }
+
+    33%{
+        left: -1000px;
+    }
+
+    48%{
+        left: -1000px;
+    }
+
+    66%{
+        left: -2000px;
+    }
+
+    81%{
+        left: -2000px;
+    }
+    100%{
+        left: -3000px;
+    }
+}
